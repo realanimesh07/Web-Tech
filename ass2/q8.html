@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <title>Input Validation</title>
+</head>
+<body>
+
+    <div class="container">
+        <label for="username">Username:</label>
+        
+        <input type="text" id="username" placeholder="Enter your name">
+        
+        <div id="errorMsg" class="error-message">⚠ This field cannot be empty.</div>
+        <div id="successMsg" class="success-message">✔ Looks good!</div>
+
+        <button onclick="validateInput()">Submit</button>
+    </div>
+
+    <script>
+        function validateInput() {
+            const inputBox = document.getElementById('username');
+            const errorMsg = document.getElementById('errorMsg');
+            const successMsg = document.getElementById('successMsg');
+            
+            const value = inputBox.value.trim();
+
+            if (value === "") {
+
+                errorMsg.style.display = "block";
+                successMsg.style.display = "none";
+                
+                inputBox.classList.add("error-border");
+                
+                inputBox.focus();
+
+            } else {
+
+                errorMsg.style.display = "none";
+                successMsg.style.display = "block";
+                
+                inputBox.classList.remove("error-border");
+                
+                console.log("Valid input:", value);
+            }
+        }
+    </script>
+
+</body>
+</html>

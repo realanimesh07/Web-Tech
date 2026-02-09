@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <title>Show/Hide Toggle</title>
+</head>
+<body>
+    <h2>Toggle Text Visibility</h2>
+
+    <button id="toggleBtn" onclick="toggleParagraph()">Hide Text</button>
+
+    <div id="contentArea">
+        <p>This is the secret paragraph! It can appear and disappear based on your command.</p>
+    </div>
+
+    <script>
+        function toggleParagraph() {
+            const content = document.getElementById("contentArea");
+            const btn = document.getElementById("toggleBtn");
+
+            if (content.style.display === "none") {
+
+                content.style.display = "block";
+                
+                btn.textContent = "Hide Text";
+
+            } else {
+                
+                content.style.display = "none";
+                
+                btn.textContent = "Show Text";
+            }
+        }
+    </script>
+
+</body>
+</html>
