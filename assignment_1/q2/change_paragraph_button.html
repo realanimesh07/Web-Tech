@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Change Paragraph Text</title>
+    <script>
+        let isOriginal = 1;
+        function changeText() {
+            const element = document.getElementById("para");
+            if (isOriginal) {
+                element.innerHTML = "Text has been changed!";
+                isOriginal = 0;
+            }
+            else {
+                element.innerHTML = "This is original text.";
+                isOriginal = 1;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <p id="para">This is original text.</p>
+    <button onclick="changeText()">Change Text</button>
+</body>
+
+</html>

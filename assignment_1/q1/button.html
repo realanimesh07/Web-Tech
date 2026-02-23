@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Button Click Message</title>
+    <script>
+        let count = 0;
+        function buttonClick() {
+            count = count + 1;
+            const element = document.getElementById("para");
+            element.innerHTML = `Button was clicked ${count} times`;
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="buttonClick()">Click Me</button>
+    <p id="para"></p>
+</body>
+
+</html>

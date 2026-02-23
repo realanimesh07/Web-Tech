@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Date and Time</title>
+    <script>
+        function showDateTime() {
+            var currentDate = new Date();
+            document.getElementById("datetime").innerHTML = currentDate;
+        }
+    </script>
+</head>
+
+<body style="background-color: lightblue;">
+    <div style="text-align: center; ">
+        <button onclick="showDateTime()" style=" background-color: #007bff;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 15px;
+            font-size: 12px;
+            cursor: pointer;
+            text-decoration: none;
+            height: 50px;
+            width: 150px ;">
+            Show Date & Time
+        </button>
+        <p id="datetime"></p>
+    </div>
+</body>
+
+</html>

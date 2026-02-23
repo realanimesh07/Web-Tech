@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Change Background Color</title>
+    <script>
+        const colourArr = ["lightblue", "aqua", "fuchsia", "grey", "navy"];
+        const length = colourArr.length;
+        let idx = 0;
+        function changeColor() {
+            document.body.style.backgroundColor = colourArr[idx++];
+            idx %= length;
+        }
+    </script>
+</head>
+
+
+<body>
+    <button onclick="changeColor()">Change Background</button>
+</body>
+
+</html>
