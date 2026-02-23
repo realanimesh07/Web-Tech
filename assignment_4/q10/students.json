@@ -1,0 +1,6 @@
+[
+    { "id": 1, "name": "Alice Johnson", "major": "Computer Science" },
+    { "id": 2, "name": "Bob Smith", "major": "Mathematics" },
+    { "id": 3, "name": "Charlie Davis", "major": "Physics" },
+    { "id": 4, "name": "Diana Prince", "major": "Arts" }
+]

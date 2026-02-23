@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Quiz App</title>
+    <style>
+        .option-btn { display: block; width: 100%; margin: 5px 0; padding: 10px; cursor: pointer; }
+        #quiz-container { max-width: 400px; border: 1px solid #ccc; padding: 20px; border-radius: 8px; }
+    </style>
+</head>
+<body>
+
+<div id="quiz-container">
+    <div id="question-box">
+        <h3 id="questionText">Loading Question...</h3>
+        <div id="optionsGroup"></div>
+    </div>
+    <div id="resultBox" style="display: none;">
+        <h3>Quiz Finished!</h3>
+        <p>Your Score: <span id="finalScore"></span> / <span id="totalQs"></span></p>
+        <button onclick="location.reload()">Restart</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

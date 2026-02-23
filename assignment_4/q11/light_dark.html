@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Theme Toggle</title>
+    <style>
+        /* Default Light Theme */
+        body {
+            background-color: white;
+            color: black;
+            transition: background 0.3s, color 0.3s;
+            font-family: sans-serif;
+        }
+
+        /* Dark Theme Styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="heading">Current Theme: Light</h2>
+    <button id="themeBtn">Toggle Dark Mode</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

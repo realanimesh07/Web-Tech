@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .error { color: red; font-size: 0.8em; display: block; margin-bottom: 10px; }
+        .input-group { margin-bottom: 5px; }
+    </style>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>Create Account</h2>
+    <form id="regForm">
+        <div class="input-group">
+            <input type="text" id="username" placeholder="Full Name">
+            <span id="nameErr" class="error"></span>
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="email" placeholder="Email Address">
+            <span id="emailErr" class="error"></span>
+        </div>
+
+        <div class="input-group">
+            <input type="password" id="password" placeholder="Password">
+            <span id="passErr" class="error"></span>
+        </div>
+
+        <div class="input-group">
+            <input type="password" id="confirmPass" placeholder="Confirm Password">
+            <span id="confirmErr" class="error"></span>
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
