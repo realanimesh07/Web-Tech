@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Styling Example</title>
+    <style>
+        /* 1️⃣ Different font styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.png'); /* Replace with your image */
+            background-repeat: no-repeat; /* Control repetition */
+            background-size: cover; /* Make it cover the page */
+        }
+
+        h1 {
+            font-family: 'Georgia', serif; /* Different font */
+            color: #2E8B57;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p {
+            font-family: 'Courier New', monospace; /* Another font */
+            font-size: 18px;
+            margin: 20px;
+        }
+
+        /* 2️⃣ Link styles */
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+            cursor: url('cursor.cur'), pointer; /* Custom cursor on hover */
+        }
+
+        a:active {
+            color: green;
+        }
+
+        /* 3️⃣ Navigation menu */
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: yellow;
+            cursor: pointer; /* Another cursor example */
+        }
+
+        /* 4️⃣ Image example */
+        .image-container {
+            width: 300px;
+            height: 200px;
+            margin: 20px auto;
+            background-image: url('example.jpg'); /* Replace with your image */
+            background-repeat: no-repeat; /* Prevent repetition */
+            background-size: contain;
+            background-position: center;
+            border: 2px solid #2E8B57;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to CSS Styling Example</h1>
+
+    <!-- Navigation with links -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <p>
+        This paragraph demonstrates different font styles. The body text uses Arial, while this paragraph uses Courier New.
+        You can customize the font-family to your choice.
+    </p>
+
+    <!-- Image container with controlled repetition -->
+    <div class="image-container"></div>
+
+    <p>
+        Visit <a href="https://www.example.com" target="_blank">Example Website</a> to see link styling in action.
+    </p>
+
+</body>
+</html>

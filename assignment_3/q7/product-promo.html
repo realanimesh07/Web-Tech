@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Promotion Page</title>
+    <style>
+        /* ===== Global Styles ===== */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #f2f2f2;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        /* ===== Header ===== */
+        header {
+            background: linear-gradient(90deg, #4CAF50, #2E8B57);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* shadow effect */
+            border-bottom-left-radius: 20px; /* rounded corners */
+            border-bottom-right-radius: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        /* ===== Navigation Menu ===== */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            padding: 15px 25px;
+            display: inline-block;
+            color: white;
+        }
+
+        nav a:hover {
+            background-color: #4CAF50;
+            transform: scale(1.1); /* transform effect */
+            border-radius: 10px;   /* rounded corners */
+        }
+
+        /* ===== Content Section ===== */
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .product-card {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            width: 250px;
+            border-radius: 15px; /* rounded corners */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* shadow effect */
+            transition: transform 0.3s, box-shadow 0.3s; /* transition effect */
+            text-align: center;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px); /* transform effect */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* shadow effect on hover */
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px; /* rounded corners for image */
+        }
+
+        .product-card h3 {
+            margin: 15px 0 10px 0;
+        }
+
+        .product-card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .product-card button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .product-card button:hover {
+            background-color: #2E8B57;
+            transform: scale(1.1);
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background: linear-gradient(90deg, #2E8B57, #4CAF50);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            box-shadow: 0 -4px 8px rgba(0,0,0,0.3);
+        }
+
+        /* ===== Responsive ===== */
+        @media(max-width: 768px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>SuperGadget 3000</h1>
+        <p>The Ultimate Gadget for Your Smart Life</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Reviews</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="content">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>SuperGadget 3000</h3>
+            <p>Experience next-level technology with this smart gadget. Compact, powerful, and sleek.</p>
+            <button>Buy Now</button>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="product-card">
+            <img src="product2.jpg" alt="Product 2">
+            <h3>SuperGadget Case</h3>
+            <p>Protect your gadget in style. Durable and trendy case for your device.</p>
+            <button>Buy Now</button>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="product-card">
+            <img src="product3.jpg" alt="Product 3">
+            <h3>SuperGadget Charger</h3>
+            <p>Fast charging for your gadget. Compact design, high performance.</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 SuperGadget Store | All Rights Reserved
+    </footer>
+
+</body>
+</html>

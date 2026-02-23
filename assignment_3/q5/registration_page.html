@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+    <script>
+        function validateForm() {
+            // Get form values
+            var fname = document.forms["regForm"]["fname"].value.trim();
+            var lname = document.forms["regForm"]["lname"].value.trim();
+            var email = document.forms["regForm"]["email"].value.trim();
+            var password = document.forms["regForm"]["password"].value;
+            var mobile = document.forms["regForm"]["mobile"].value.trim();
+            var address = document.forms["regForm"]["address"].value.trim();
+
+            // 1. First Name: only alphabets, min length 6
+            var namePattern = /^[A-Za-z]+$/;
+            if (fname == "" || !namePattern.test(fname)) {
+                alert("First Name must contain only alphabets.");
+                return false;
+            }
+            if (fname.length < 6) {
+                alert("First Name must be at least 6 characters long.");
+                return false;
+            }
+
+            // 2. Last Name: should not be empty
+            if (lname == "") {
+                alert("Last Name cannot be empty.");
+                return false;
+            }
+
+            // 3. Password: min length 6
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                return false;
+            }
+
+            // 4. Email: standard pattern
+            var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid Email ID (name@domain.com).");
+                return false;
+            }
+
+            // 5. Mobile Number: exactly 10 digits
+            var mobilePattern = /^[0-9]{10}$/;
+            if (!mobilePattern.test(mobile)) {
+                alert("Mobile number must contain exactly 10 digits.");
+                return false;
+            }
+
+            // 6. Address: should not be empty
+            if (address == "") {
+                alert("Address cannot be empty.");
+                return false;
+            }
+
+            alert("Registration Successful!");
+            return true; // Form is valid
+        }
+    </script>
+</head>
+<body>
+    <h2>User Registration</h2>
+    <form name="regForm" onsubmit="return validateForm()">
+        <label>First Name:</label><br>
+        <input type="text" name="fname"><br><br>
+
+        <label>Last Name:</label><br>
+        <input type="text" name="lname"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password"><br><br>
+
+        <label>Mobile Number:</label><br>
+        <input type="text" name="mobile"><br><br>
+
+        <label>Address:</label><br>
+        <textarea name="address" rows="4" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+    </form>
+</body>
+</html>
