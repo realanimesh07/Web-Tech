@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Button Click Message</title>
-    <script>
-        let count = 0;
-        function buttonClick() {
-            count = count + 1;
-            const element = document.getElementById("para");
-            element.innerHTML = `Button was clicked ${count} times`;
-        }
-    </script>
+    <title>Display Message</title>
 </head>
-
 <body>
-    <button onclick="buttonClick()">Click Me</button>
-    <p id="para"></p>
+    <button class="js-display-button">
+        Display
+    </button>
+    <p class="js-para"></p>
+    <script>
+        
+        let count = 0;
+        document.querySelector('.js-display-button').addEventListener('click',
+            () => {
+            count ++;
+            document.querySelector('.js-para').innerHTML = `Button was clicked ${count} times`
+            }
+        );
+    </script>
 </body>
-
 </html>
